@@ -1,0 +1,10 @@
+language: ruby 
+script: ./build.sh
+deploy:
+  provider: releases
+  api_key:
+    secure: c37PNgjki+q2ORiWC7zLx3T2PF2T/+2irD7KB9/fi3SyzAMPdkHs2BWNlxrb6M/e376r29kOV377hnp11Cr05EUbudKDFY+vhGN1Hk3n/3Iz1m5+9o4CddIK8baQxpR7f4xjBBkzE31L0Pz4AAQjkOIdBQQ59PX/56giVX1CSEDyFr5SNVWtBn4JQ1HFn6ArLwTtems8tBmV5yimes9y99FuR6mn61vQFnZB6B+uhzdoltaJYP/jT5k3mKS0KwRvjyjfLI8TMymIYtLZiq4TQs+WGZjJfv7luW1CUkCw0x13FDgPke4lVuLOJKZMyjOhnhPPFgrBDkJv+lGvC7bxIFBd3rnNFhZLzhnE7DV1Otp3odilRQWzIb1JoFwsARFEz60FckyrBEjWPNmXtQlgD7fulqboguvtv49QTopSmTnXEeKNYk0wUwpoViltc5j3N2Amh4dCD8a8PXNmtc2UdIWa+mjAm8B4Ya2RXzWBRnszRHKOR/6By9mbEpCKXuUZuidIq4BGn6HS/92/7ZmUIQ+BkQ+P1zy9zvv1aKjidgAdF5kfsVn/qKxlr4ry1Fy5iJ8pQUQCsCPAX2ch/Q+Buql0Pfi1mTqgmAbZ03dCGItC/xRip4nnOMI/RRxJRR1N0XvYDH8HIgoRNtBS6d6XrAwvTTuFqp7sMRzV6/vkOhY=
+  file: dist/apache-tomcat-${TRAVIS_TAG}-windows-x64-rehei.zip
+  on:
+    tags: true
+    repo: rehei/tomcat7-rehei
