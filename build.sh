@@ -1,7 +1,7 @@
 DESTINATION="dist"
 
 TAG=${TRAVIS_TAG:=7.0.63}
-TOMCAT_URL=http://apache.mirror.iphh.net/tomcat/tomcat-7/v${TAG}/bin/apache-tomcat-${TAG}-windows-x64.zip
+TOMCAT_URL=http://archive.apache.org/dist/tomcat/tomcat-7/v${TAG}/bin/apache-tomcat-${TAG}-windows-x64.zip
 TOMCAT_ZIP=apache-tomcat-${TAG}-windows-x64.zip
 TOMCAT_SOURCE=apache-tomcat-${TAG}
 TOMCAT_DESTINATION=${TOMCAT_SOURCE}-windows-x64-rehei
