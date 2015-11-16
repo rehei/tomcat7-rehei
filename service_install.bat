@@ -1,1 +1,1 @@
-CALL %~dp0%service.bat install
+CALL "%~dp0%service.bat" install
