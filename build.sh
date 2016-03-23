@@ -26,7 +26,7 @@ rm -rf ./$TOMCAT_DESTINATION/webapps/*
 cd ..
 cp run.bat dist/$TOMCAT_DESTINATION/.
 cp service.bat dist/$TOMCAT_DESTINATION/.
-cp service_install.bat dist/$TOMCAT_DESTINATION/.
+cp service_install_and_start.bat dist/$TOMCAT_DESTINATION/.
 cp service_setenv.bat dist/$TOMCAT_DESTINATION/.
 cp service_uninstall.bat dist/$TOMCAT_DESTINATION/.
 cp catalina.properties dist/$TOMCAT_DESTINATION/conf/.
