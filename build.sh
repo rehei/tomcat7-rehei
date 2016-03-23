@@ -20,6 +20,7 @@ unzip $TOMCAT_ZIP
 wget --no-check-certificate -c --header "Cookie: oraclelicense=accept-securebackup-cookie" $JRE_URL
 tar -zxvf $JRE_TARBALL
 cd ..
+chmod +x ./tmp/$TOMCAT_SOURCE/bin/*
 mv ./tmp/$TOMCAT_SOURCE ./$TOMCAT_DESTINATION
 mv ./tmp/$JRE_SOURCE ./$TOMCAT_DESTINATION/$JRE_DESTINATION
 rm -rf ./$TOMCAT_DESTINATION/webapps/*
