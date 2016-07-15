@@ -31,7 +31,7 @@ cp service_install_and_start.bat dist/$TOMCAT_DESTINATION/.
 cp service_setenv.bat dist/$TOMCAT_DESTINATION/.
 cp service_uninstall.bat dist/$TOMCAT_DESTINATION/.
 cp catalina.properties dist/$TOMCAT_DESTINATION/conf/.
-cp context.xml dist/$TOMCAT_DESTINATION/conf/.
+#cp context.xml dist/$TOMCAT_DESTINATION/conf/.
 cd dist/$TOMCAT_DESTINATION
 zip -r ../${TOMCAT_DESTINATION}.zip .
 cd ..
