@@ -26,12 +26,12 @@ mv ./tmp/$JRE_SOURCE ./$TOMCAT_DESTINATION/$JRE_DESTINATION
 rm -rf ./$TOMCAT_DESTINATION/webapps/*
 cd ..
 cp run.bat dist/$TOMCAT_DESTINATION/.
+cp startup4g.sh dist/$TOMCAT_DESTINATION/.
 cp service.bat dist/$TOMCAT_DESTINATION/.
 cp service_install_and_start.bat dist/$TOMCAT_DESTINATION/.
 cp service_setenv.bat dist/$TOMCAT_DESTINATION/.
 cp service_uninstall.bat dist/$TOMCAT_DESTINATION/.
 cp catalina.properties dist/$TOMCAT_DESTINATION/conf/.
-#cp context.xml dist/$TOMCAT_DESTINATION/conf/.
 cd dist/$TOMCAT_DESTINATION
 zip -r ../${TOMCAT_DESTINATION}.zip .
 cd ..
